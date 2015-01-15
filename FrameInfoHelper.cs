@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Bowling.Interfaces;
 
@@ -21,7 +22,9 @@ namespace Bowling
         }
 
         public bool DoBowlsEqualAStrike(List<IBowlInfo> bowls)
-        {            
+        {
+            if (bowls.Count < _noOfBowlsForAStrike) return false;
+
             var testForAStrikeScore = 0;
 
             for (var a = 0; a < _noOfBowlsForAStrike; a++)
@@ -33,7 +36,9 @@ namespace Bowling
         }
 
         public bool DoBowlsEqualASpare(List<IBowlInfo> bowls)
-        {            
+        {
+            if (bowls.Count < _noOfBowlsForASpare) return false;
+
             var testForASpareScore = 0;
 
             for (var a = 0; a < _noOfBowlsForASpare; a++)

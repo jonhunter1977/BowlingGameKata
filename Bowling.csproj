@@ -67,8 +67,9 @@
     <Compile Include="Interfaces\IClassifiedFrame.cs" />
     <Compile Include="StrikeFrame.cs" />
     <Compile Include="Tests\TestFrames.cs" />
-    <Compile Include="Tests\Tests.cs" />
+    <Compile Include="Tests\GameScoringTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\FrameInfoHelperTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
