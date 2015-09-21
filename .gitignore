@@ -1,3 +1,9 @@
 _ReSharper.Bowling/
 bin/
 obj/
+packages/
+Properties/
+*.user
+*.sln
+*.csproj
+*.suo
